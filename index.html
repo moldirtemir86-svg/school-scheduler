@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мектеп Іс-шаралары мен Кезекшілік Кестесі</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏫 Мектеп Іс-шаралары мен Кезекшілік Кестесі</h1>
+
+    <!-- Іс-шара қосу формасы -->
+    <section class="card">
+      <h2>Жаңа іс-шара қосу</h2>
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Іс-шара атауы" required>
+        <input type="date" id="date" required>
+        <input type="text" id="dutyPerson" placeholder="Кезекші (оқушы/муғалім)" required>
+        <button type="submit">Қосу</button>
+      </form>
+    </section>
+
+    <!-- Кесте кестесі -->
+    <section class="card">
+      <h2>Кесте тізімі</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Іс-шара</th>
+            <th>Күні</th>
+            <th>Кезекші</th>
+          </tr>
+        </thead>
+        <tbody id="scheduleTable">
+          <!-- Мәліметтер JS арқылы арқылы қосылады -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
